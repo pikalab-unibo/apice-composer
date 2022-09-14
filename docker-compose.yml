@@ -21,7 +21,7 @@ services:
       placement:
         constraints: [node.labels.capabilities.web == yes]
   db:
-    image: "mysql:latest"
+    image: "mysql:5.7"
     restart: always
     volumes:
       # - ./xwiki.cnf:/etc/mysql/conf.d/xwiki.cnf
